@@ -1,12 +1,15 @@
 import { useState, useEffect } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import Navbar from './Navbar';
+import NavbarP from './NavbarP';
 import Footer from './Footer';
 import ScrollToTop from './ScrollToTop';
 
 const Layout = () => {
   const { pathname } = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const isHome = location.pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,7 +27,7 @@ const Layout = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <Navbar isScrolled={isScrolled} />
+       {isHome ? <Navbar isScrolled={isScrolled} /> : <NavbarP isScrolled={isScrolled} />}
       <main className="flex-grow">
         <Outlet />
       </main>

@@ -8,6 +8,7 @@ export default {
           DEFAULT: '#6F4E37',
           light: '#8A6D57',
           dark: '#523A29',
+          extraDark: '#3B291D',
         },
         secondary: {
           DEFAULT: '#F9F5F0',
