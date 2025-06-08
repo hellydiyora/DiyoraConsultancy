@@ -36,4 +36,4 @@ http://localhost:5173
 # Contact
 For business inquiries or collaborations, email: hellydiyora16@gmail.com
 
-### Demo Website: www.diyoraconsultancy.com (Live coming soon)
+### Demo Website: https://diyora-consultancy-six.vercel.app/ (Live coming soon)
